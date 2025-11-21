@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="महंगे और ब्रांडेड कपड़ों की प्रोफेशनल रिपेयरिंग सर्विस Thaltej, Gota, Adani Shantinagram में। होम सर्विस उपलब्ध। ₹500 विजिट चार्ज।">
+    <meta name="keywords" content="कपड़े रिपेयरिंग, branded kapde repair, Thaltej tailor, Gota stitching, Ahmedabad clothing repair">
+    <title>Premium Clothing Repair Service - Thaltej, Gota, Adani Shantinagram</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            transition: opacity 0.3s;
+        }
+
+        .nav-links a:hover {
+            opacity: 0.8;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 120px 20px 80px;
+            text-align: center;
+            margin-top: 60px;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .cta-button {
+            background: white;
+            color: #667eea;
+            padding: 15px 40px;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .cta-button:hover {
+            transform: scale(1.05);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 3rem;
+            color: #667eea;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .service-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .service-card h3 {
+            color: #667eea;
+            margin-bottom: 1rem;
+        }
+
+        .pricing-box {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+            margin: 2rem 0;
+        }
+
+        .pricing-box h2 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .booking-form {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 10px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        .submit-button {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px 40px;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            width: 100%;
+            transition: transform 0.3s;
+        }
+
+        .submit-button:hover {
+            transform: scale(1.02);
+        }
+
+        .areas-served {
+            background: #f8f9fa;
+            padding: 3rem 0;
+        }
+
+        .area-badges {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .badge {
+            background: #667eea;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+
+        .footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            right: 40px;
+            background-color: #25d366;
+            color: white;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+        }
+
+        .success-message {
+            display: none;
+            background: #4caf50;
+            color: white;
+            padding: 1rem;
+            border-radius: 5px;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                gap: 1rem;
+                font-size: 0.9rem;
+            }
+
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">🧵 Premium Repair Service</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#booking">Book Now</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h1>महंगे और ब्रांडेड कपड़ों की प्रोफेशनल रिपेयरिंग</h1>
+        <p>Thaltej, Gota, Adani Shantinagram में होम सर्विस उपलब्ध</p>
+        <button class="cta-button" onclick="document.getElementById('booking').scrollIntoView({behavior: 'smooth'})">
+            अपॉइंटमेंट बुक करें
+        </button>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="container">
+        <h2 class="section-title">हमारी सर्विसेस</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <h3>🎽 ब्रांडेड कपड़े रिपेयर</h3>
+                <p>महंगे और ब्रांडेड कपड़ों की बेहतरीन रिपेयरिंग और alterations। Original quality maintain करते हुए।</p>
+            </div>
+            <div class="service-card">
+                <h3>✂️ फिटिंग और Alterations</h3>
+                <p>Perfect fitting के लिए professional alterations। Suits, dresses, और सभी तरह के कपड़े।</p>
+            </div>
+            <div class="service-card">
+                <h3>🧷 Stitching और Mending</h3>
+                <p>Expert stitching और mending services। Quality work की guarantee के साथ।</p>
+            </div>
+            <div class="service-card">
+                <h3>🏠 होम सर्विस</h3>
+                <p>आपके घर पर आकर कपड़े collect करते हैं। Convenient और hassle-free service।</p>
+            </div>
+        </div>
+
+        <div class="pricing-box">
+            <p>होम विजिट चार्ज</p>
+            <h2>₹500</h2>
+            <p>सर्विस एरिया: Thaltej | Gota | Adani Shantinagram</p>
+        </div>
+    </section>
+
+    <!-- Areas Served -->
+    <section class="areas-served">
+        <div class="container">
+            <h2 class="section-title">हम कहाँ सर्विस देते हैं</h2>
+            <div class="area-badges">
+                <span class="badge">📍 Thaltej</span>
+                <span class="badge">📍 Gota</span>
+                <span class="badge">📍 Adani Shantinagram</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Form -->
+    <section id="booking" class="container">
+        <h2 class="section-title">अपॉइंटमेंट बुक करें</h2>
+        <div class="booking-form">
+            <div id="successMessage" class="success-message">
+                ✅ आपका अपॉइंटमेंट बुक हो गया है! जल्द ही हम आपसे संपर्क करेंगे।
+            </div>
+            <form id="appointmentForm">
+                <div class="form-group">
+                    <label for="name">आपका नाम *</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">मोबाइल नंबर *</label>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="area">एरिया *</label>
+                    <select id="area" name="area" required>
+                        <option value="">Select Area</option>
+                        <option value="Thaltej">Thaltej</option>
+                        <option value="Gota">Gota</option>
+                        <option value="Adani Shantinagram">Adani Shantinagram</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="address">पूरा पता *</label>
+                    <textarea id="address" name="address" required></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="date">पसंदीदा तारीख *</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="time">पसंदीदा समय *</label>
+                    <select id="time" name="time" required>
+                        <option value="">Select Time</option>
+                        <option value="10:00 AM - 12:00 PM">10:00 AM - 12:00 PM</option>
+                        <option value="12:00 PM - 2:00 PM">12:00 PM - 2:00 PM</option>
+                        <option value="2:00 PM - 4:00 PM">2:00 PM - 4:00 PM</option>
+                        <option value="4:00 PM - 6:00 PM">4:00 PM - 6:00 PM</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="service">किस तरह की सर्विस चाहिए? *</label>
+                    <textarea id="service" name="service" placeholder="जैसे: suit की fitting, jeans repair, etc." required></textarea>
+                </div>
+                
+                <button type="submit" class="submit-button">अपॉइंटमेंट बुक करें</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container">
+        <h2 class="section-title">संपर्क करें</h2>
+        <div style="text-align: center;">
+            <p style="font-size: 1.2rem; margin-bottom: 1rem;">📞 व्हाट्सएप पर संपर्क करें</p>
+            <p style="font-size: 1rem; color: #666;">सर्विस एरिया: Thaltej, Gota, Adani Shantinagram, Ahmedabad</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Premium Clothing Repair Service. All rights reserved.</p>
+        <p>Made with ❤️ for quality clothing care</p>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <div class="whatsapp-float" onclick="openWhatsApp()">
+        📱
+    </div>
+
+    <script>
+        // Set minimum date to today
+        const dateInput = document.getElementById('date');
+        const today = new Date().toISOString().split('T')[0];
+        dateInput.setAttribute('min', today);
+
+        // Form submission handler
+        document.getElementById('appointmentForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form data
+            const formData = {
+                name: document.getElementById('name').value,
+                phone: document.getElementById('phone').value,
+                area: document.getElementById('area').value,
+                address: document.getElementById('address').value,
+                date: document.getElementById('date').value,
+                time: document.getElementById('time').value,
+                service: document.getElementById('service').value
+            };
+
+            // Create WhatsApp message
+            const message = `🧵 *नया अपॉइंटमेंट बुकिंग*\n\n` +
+                          `👤 नाम: ${formData.name}\n` +
+                          `📞 फोन: ${formData.phone}\n` +
+                          `📍 एरिया: ${formData.area}\n` +
+                          `🏠 पता: ${formData.address}\n` +
+                          `📅 तारीख: ${formData.date}\n` +
+                          `⏰ समय: ${formData.time}\n` +
+                          `✂️ सर्विस: ${formData.service}\n\n` +
+                          `💰 विजिट चार्ज: ₹500`;
+
+            // Replace with your WhatsApp number (with country code, without + or spaces)
+            const phoneNumber = '919999999999'; // REPLACE THIS WITH YOUR ACTUAL NUMBER
+            
+            // Encode message for URL
+            const encodedMessage = encodeURIComponent(message);
+            
+            // Open WhatsApp
+            window.open(`https://wa.me/${phoneNumber}?text=${encodedMessage}`, '_blank');
+            
+            // Show success message
+            document.getElementById('successMessage').style.display = 'block';
+            
+            // Reset form
+            this.reset();
+            
+            // Hide success message after 5 seconds
+            setTimeout(() => {
+                document.getElementById('successMessage').style.display = 'none';
+            }, 5000);
+        });
+
+        // WhatsApp float button
+        function openWhatsApp() {
+            const phoneNumber = '917984299680'; // REPLACE THIS WITH YOUR ACTUAL NUMBER
+            const message = 'नमस्ते, मुझे clothing repair service के बारे में जानकारी चाहिए।';
+            window.open(`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`, '_blank');
+        }
+    </script>
+</body>
+</html>
